@@ -1,0 +1,9 @@
+services:
+  analysis-env:
+    image: dsci310-ia3-arya-sardesai-docker  # Name your image here
+    ports:
+      - 8787:8787
+    volumes:
+      - .:/home/rstudio/work  # Maps your local working directory to the container
+    environment:
+      DISABLE_AUTH: true  # Disables authentication for RStudio
